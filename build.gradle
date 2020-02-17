@@ -1,0 +1,24 @@
+/*
+ Compile java
+ Run tests
+ Format test results
+ Build a JAR
+ Create a top-level task that does all these things
+ */
+
+apply plugin: 'java'
+
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+}
+
+repositories {
+  mavenCentral()
+}
+
+task run(type: JavaExec) {
+  main = 'RunEdgeConvert'
+  classpath = sourceSets.main.runtimeClasspath
+}
+
