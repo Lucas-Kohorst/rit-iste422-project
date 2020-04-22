@@ -12,6 +12,7 @@ public class EdgeTable {
       name = st.nextToken();
       alRelatedTables = new ArrayList();
       alNativeFields = new ArrayList();
+      relatedFields = new int[10];
    }
    
    public int getNumFigure() {

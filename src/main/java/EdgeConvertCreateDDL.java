@@ -53,6 +53,10 @@ public abstract class EdgeConvertCreateDDL {
       return null;
    }
    
+   public EdgeTable[] getTables() {
+      return tables;
+   }
+   
    protected EdgeField getField(int numFigure) {
       for (int fIndex = 0; fIndex < fields.length; fIndex++) {
          if (numFigure == fields[fIndex].getNumFigure()) {
@@ -60,6 +64,10 @@ public abstract class EdgeConvertCreateDDL {
          }
       }
       return null;
+   }
+
+   public EdgeField[] getFields() {
+      return fields;
    }
 
    public abstract String getDatabaseName();

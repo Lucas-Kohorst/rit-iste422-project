@@ -22,7 +22,7 @@ public class CreateDDLMySQL extends EdgeConvertCreateDDL {
    }
    
    public void createDDL() {
-      EdgeConvertGUI.setReadSuccess(true);
+      // EdgeConvertGUI.setReadSuccess(true);
       databaseName = generateDatabaseName();
       sb.append("CREATE DATABASE " + databaseName + ";\r\n");
       sb.append("USE " + databaseName + ";\r\n");
@@ -94,7 +94,7 @@ public class CreateDDLMySQL extends EdgeConvertCreateDDL {
                   }
                   sb.append("\r\n");
                }
-               sb.append(");\r\n\r\n"); //end of table
+               sb.append(");"); //end of table
             }
          }
       }
