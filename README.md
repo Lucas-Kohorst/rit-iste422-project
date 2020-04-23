@@ -1,4 +1,6 @@
 # ISTE 422 Group Project
+[View the Wiki here](https://github.com/Lucas-Kohorst/rit-iste422-project/wiki)
+
 ## Group Dragon
 
 ### Using Make
